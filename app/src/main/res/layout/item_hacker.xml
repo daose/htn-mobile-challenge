@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/item_padding_top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/profile"
+        fresco:roundAsCircle="true"
+        fresco:roundingBorderWidth="1dp"
+        fresco:roundingBorderColor="@color/colorDivider"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_width="@dimen/item_profile"
+        android:layout_height="@dimen/item_profile" />
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/item_text_margin_left"
+        android:layout_marginStart="@dimen/item_text_margin_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/name"
+            android:textSize="@dimen/item_title"
+            android:textColor="@color/colorTextTitle"
+            android:includeFontPadding="false"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/skills"
+            android:layout_below="@id/name"
+            android:layout_alignRight="@id/name"
+            android:layout_alignEnd="@id/name"
+            android:ellipsize="end"
+            android:textSize="@dimen/item_subtitle"
+            android:textColor="@color/colorTextSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_below="@id/skills"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/divider_margin"
+            android:background="@color/colorDivider"
+            android:layout_height="1dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">HTN Interview</string>
+    <string name="htn">Hack the North</string>
+
+    <string name="company">COMPANY</string>
+    <string name="phone">PHONE</string>
+    <string name="mail">E-MAIL</string>
+    <string name="skills">SKILLS</string>
+
+    <string name="title_activity_hacker">HackerActivity</string>
+</resources>

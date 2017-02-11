@@ -1,0 +1,207 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:chart="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.daose.htninterview.fragments.HackerFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_vertical_margin"/>
+
+        <RelativeLayout
+            android:id="@+id/container_company"
+            android:visibility="gone"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ic_company"
+                android:src="@drawable/ic_company"
+                android:tint="@color/colorPrimary"
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size" />
+
+            <TextView
+                android:id="@+id/title_company"
+                android:layout_toRightOf="@id/ic_company"
+                android:layout_toEndOf="@id/ic_company"
+                android:layout_marginLeft="@dimen/hacker_text_margin"
+                android:layout_marginStart="@dimen/hacker_text_margin"
+                android:textStyle="bold"
+                android:text="@string/company"
+                android:textSize="@dimen/hacker_subtitle_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/company"
+                android:layout_below="@id/title_company"
+                android:layout_alignLeft="@id/title_company"
+                android:layout_alignStart="@id/title_company"
+                android:text="@string/company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_below="@id/company"
+                android:layout_alignLeft="@id/company"
+                android:layout_alignStart="@id/company"
+                android:layout_width="match_parent"
+                android:background="@color/colorDivider"
+                android:layout_marginTop="@dimen/divider_margin"
+                android:layout_marginBottom="@dimen/divider_margin"
+                android:layout_height="1dp"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/container_phone"
+            android:visibility="gone"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ic_phone"
+                android:src="@drawable/ic_phone"
+                android:tint="@color/colorPrimary"
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size" />
+
+            <TextView
+                android:id="@+id/title_phone"
+                android:layout_toRightOf="@id/ic_phone"
+                android:layout_toEndOf="@id/ic_phone"
+                android:layout_marginLeft="@dimen/hacker_text_margin"
+                android:layout_marginStart="@dimen/hacker_text_margin"
+                android:textStyle="bold"
+                android:text="@string/phone"
+                android:textSize="@dimen/hacker_subtitle_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_below="@id/title_phone"
+                android:layout_alignLeft="@id/title_phone"
+                android:layout_alignStart="@id/title_phone"
+                android:text="@string/phone"
+                android:textColor="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_below="@id/phone"
+                android:layout_alignLeft="@id/phone"
+                android:layout_alignStart="@id/phone"
+                android:layout_width="match_parent"
+                android:background="@color/colorDivider"
+                android:layout_marginTop="@dimen/divider_margin"
+                android:layout_marginBottom="@dimen/divider_margin"
+                android:layout_height="1dp"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/container_mail"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ic_mail"
+                android:src="@drawable/ic_mail"
+                android:tint="@color/colorPrimary"
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size" />
+
+            <TextView
+                android:id="@+id/title_mail"
+                android:layout_toRightOf="@id/ic_mail"
+                android:layout_toEndOf="@id/ic_mail"
+                android:layout_marginLeft="@dimen/hacker_text_margin"
+                android:layout_marginStart="@dimen/hacker_text_margin"
+                android:textStyle="bold"
+                android:text="@string/mail"
+                android:textSize="@dimen/hacker_subtitle_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/mail"
+                android:layout_below="@id/title_mail"
+                android:layout_alignLeft="@id/title_mail"
+                android:layout_alignStart="@id/title_mail"
+                android:text="@string/mail"
+                android:clickable="true"
+                android:textColor="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_below="@id/mail"
+                android:layout_alignLeft="@id/mail"
+                android:layout_alignStart="@id/mail"
+                android:layout_width="match_parent"
+                android:background="@color/colorDivider"
+                android:layout_marginTop="@dimen/divider_margin"
+                android:layout_marginBottom="@dimen/divider_margin"
+                android:layout_height="1dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/container_skills"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ic_skills"
+                android:src="@drawable/ic_skills"
+                android:tint="@color/colorPrimary"
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size" />
+
+            <TextView
+                android:id="@+id/title_skills"
+                android:layout_toRightOf="@id/ic_skills"
+                android:layout_toEndOf="@id/ic_skills"
+                android:layout_marginLeft="@dimen/hacker_text_margin"
+                android:layout_marginStart="@dimen/hacker_text_margin"
+                android:textStyle="bold"
+                android:text="@string/skills"
+                android:textSize="@dimen/hacker_subtitle_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.db.chart.view.HorizontalBarChartView
+                chart:chart_fontSize="12dp"
+                android:id="@+id/chart_skills"
+                android:layout_below="@id/ic_skills"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/chart_height"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_vertical_margin"/>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

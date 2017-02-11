@@ -1,0 +1,34 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="app_bar_height">64dp</dimen>
+    <dimen name="collapsing_toolbar_height">256dp</dimen>
+
+    <dimen name="list_padding_top">8dp</dimen>
+    <dimen name="list_padding_bottom">8dp</dimen>
+
+    <dimen name="icon_size">24dp</dimen>
+
+    <dimen name="item_height">72dp</dimen>
+    <dimen name="item_padding_top">20dp</dimen>
+    <dimen name="item_padding_bottom">20dp</dimen>
+    <dimen name="item_profile">40dp</dimen>
+    <dimen name="item_title">16sp</dimen>
+    <dimen name="item_subtitle">14sp</dimen>
+    <dimen name="item_text_margin_left">16dp</dimen>
+
+    <dimen name="hacker_profile">64dp</dimen>
+    <dimen name="hacker_subtitle_size">10sp</dimen>
+    <dimen name="hacker_text_margin">32dp</dimen>
+
+    <dimen name="chart_height">400dp</dimen>
+    <dimen name="chart_bar_spacing">4dp</dimen>
+
+    <dimen name="initial_font_size">24sp</dimen>
+    <dimen name="initial_size">64dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+    <dimen name="divider_margin">16dp</dimen>
+</resources>
